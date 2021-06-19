@@ -8,6 +8,28 @@ As funções são:
 •	Famílias: grupos com mais de 2 pessoas não podem entrar no estabelecimento.
 •	Função agregadora: só autoriza a entrada no estabelecimento de clientes que cumprirem com as 3 funções anteriores.
 */
+	
+	public static boolean temperatura(double medida) {
+        if (medida <= 37) {
+            return true;
+        }return false;
+    }
+    public static boolean mascara(String mask) {
+        if (mask.equals("sim")) {
+            return true;
+        }return false;
+    }
+    public static boolean familia(int qtde) {
+        if (qtde <=2) {
+            return true;
+        }return false;
+    }
+    public static boolean agregadora(double medida, String mask, int qtde) {
+        return temperatura(medida) && mascara(mask) && familia(qtde);
+    }
+	
+		
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 

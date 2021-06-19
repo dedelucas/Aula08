@@ -39,5 +39,6 @@ public static final int TAMANHO_CARRINHO = 5;
                 break;
             }
         }
+        leitor.close();
     }
 }
